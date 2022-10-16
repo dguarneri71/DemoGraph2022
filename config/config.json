@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "microsoft-graph-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/microsoftGraph/MicrosoftGraphWebPart.js",
+          "manifest": "./src/webparts/microsoftGraph/MicrosoftGraphWebPart.manifest.json"
+        }
+      ]
+    },
+    "pn-p-graph-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pnPGraph/PnPGraphWebPart.js",
+          "manifest": "./src/webparts/pnPGraph/PnPGraphWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MicrosoftGraphWebPartStrings": "lib/webparts/microsoftGraph/loc/{locale}.js",
+    "PnPGraphWebPartStrings": "lib/webparts/pnPGraph/loc/{locale}.js"
+  }
+}
